@@ -1,3 +1,84 @@
+/* font styles */
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Medium.woff2) format(woff2),
+    url(../fonts/Gilroy-Medium.woff) format(woff),
+    url(../fonts/Gilroy-Medium.ttf) format(truetype),
+    url(../fonts/Gilroy-Medium.eot?) format(embedded-opentype);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-MediumItalic.woff2) format(woff2),
+    url(../fonts/Gilroy-MediumItalic.woff) format(woff),
+    url(../fonts/Gilroy-MediumItalic.ttf) format(truetype),
+    url(../fonts/Gilroy-MediumItalic.eot) format(embedded-opentype);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Regular.woff2) format(woff2),
+    url(../fonts/Gilroy-Regular.woff) format(woff),
+    url(../fonts/Gilroy-Regular.ttf) format(truetype),
+    url(../fonts/Gilroy-Regular.eot) format(embedded-opentype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-RegularItalic.woff2) format(woff2),
+    url(../fonts/Gilroy-RegularItalic.woff) format(woff),
+    url(../fonts/Gilroy-RegularItalic.ttf) format(truetype),
+    url(../fonts/Gilroy-RegularItalic.eot) format(embedded-opentype);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Semibold.woff2) format(woff2),
+    url(../fonts/Gilroy-Semibold.woff) format(woff),
+    url(../fonts/Gilroy-Semibold.ttf) format(truetype),
+    url(../fonts/Gilroy-Semibold.eot) format(embedded-opentype);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-SemiboldItalic.woff2) format(woff2),
+    url(../fonts/Gilroy-SemiboldItalic.woff) format(woff),
+    url(../fonts/Gilroy-SemiboldItalic.ttf) format(truetype),
+    url(../fonts/Gilroy-SemiboldItalic.eot) format(embedded-opentype);
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Bold.woff2) format(woff2),
+    url(../fonts/Gilroy-Bold.woff) format(woff),
+    url(../fonts/Gilroy-Bold.ttf) format(truetype),
+    url(../fonts/Gilroy-Bold.eot) format(embedded-opentype);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-BoldItalic.woff2) format(woff2),
+    url(../fonts/Gilroy-BoldItalic.woff) format(woff),
+    url(../fonts/Gilroy-BoldItalic.ttf) format(truetype),
+    url(../fonts/Gilroy-BoldItalic.eot) format(embedded-opentype);
+  font-weight: 700;
+  font-style: italic;
+}
+
 /* Reset styles */
 h1,
 h2,
@@ -22,14 +103,52 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  font-style: normal;
 }
 
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  color: #0c0c0c;
+  background: #fff;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    min-width: 320px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
 }
