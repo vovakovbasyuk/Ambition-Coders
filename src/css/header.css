@@ -132,7 +132,7 @@
       rgba(12, 12, 12, 0.92),
       rgba(12, 12, 12, 0.92)
     ),
-    url(../Images/mobile_menu/mobile_menu_mob.jpg);
+    url(../img/header/mobile_menu/mobile_menu_mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -248,7 +248,7 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url(../images/mobile_menu/mobile_menu_mob@2x.jpg);
+      url(../img/header/mobile_menu/mobile_menu_mob@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -257,7 +257,7 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url(../Images/mobile_menu/mobile_menu_tabl.jpg);
+      url(../img/header/mobile_menu/mobile_menu_tabl.jpg);
   }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
@@ -266,7 +266,7 @@
         rgba(12, 12, 12, 0.92),
         rgba(12, 12, 12, 0.92)
       ),
-      url(../images/mobile_menu/mobile_menu_tabl@2x.jpg);
+      url(../img/header/mobile_menu/mobile_menu_tabl@2x.jpg);
   }
 }
 
