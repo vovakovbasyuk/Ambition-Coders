@@ -1,6 +1,5 @@
-<section class="abt-section container">
-    <!--<div class="container">-->  <!--Про всяк випадок-->
-    <div class="abt-div-main">
+<section class="abt-section">
+    <div class="container">
         <div class="abt-t-p-div">
             <h2 class="abt-h">About Us</h2>
             <p class="abt-p">Welcome to our premium watch
@@ -11,9 +10,11 @@
                 collection, we believe that a watch is more than just a timekeeping device - it's a statement piece
                 that reflects your personality and style. So why settle for anything less than the best?</p>
         </div>
-        <button class="abt-btn">Viev Catalog</button>
+        <button class="abt-btn" href><a href="./index.html#catalog" class="abt-btn-a">Viev Catalog</a></button>
     </div>
-    <img id="abt-img" src="./img/abt-us/about_us.jpg"
-        alt="Cool watch photo">
-        <!--</div>-->
+        <picture>
+            <source media="(min-width:768px)" srcset="./img/abt-us/about_us_tablet.jpg">
+            <source media="(min-width:1024px)" srcset="./img/abt-us/about_us.jpg">
+            <img class="abt-img" src="./img/abt-us/about_us_phone.jpg" alt="Watch" style="width:auto;">
+        </picture>
 </section>

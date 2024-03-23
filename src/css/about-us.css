@@ -1,38 +1,32 @@
 .abt-section{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0px 65px;
-    gap: 40px;
-    margin-bottom: 100px;
+    padding: 0px 20px;
+    min-width: 375px;
+    min-height: 912px;
 }
 
-.abt-div-main{
-    padding: 80px 60px;
-    width: 580px;
-    height: 532px;
-    background-color: #F3F3F3;
-    border-radius: 50px;
+.container{
+    min-width: 335px;
+    min-height: 446px;
 }
 
 .abt-t-p-div{
     min-width: 295px;
-    min-height: 278px;  
-    display: flex;
-    flex-direction: column;
-    max-width: 460px;    
+    min-height: 278px;
+    margin-bottom: 40px;
 }
 
 .abt-h{
+    font-family: var(--font-family);
     font-weight: 600;
     font-size: 32px;
     line-height: 100%;
     letter-spacing: -0.02em;
     color: var(--main);
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 
 .abt-p{
+    font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 129%;
@@ -43,17 +37,136 @@
 
 .abt-btn{
     width: 160px;
-    height: 48px;
+    height: 48px; 
+    border-radius: 16px;
+    background-color: #3350E9;
+    color: #ffffff;
     text-align: center;
     cursor: pointer;
     border: none;
-    background-color: #3350E9;
-    color: #ffffff;
-    border-radius: 16px;
 }
 
 .abt-img{
-    border-radius: 50px;
-    max-width: 530px;
-    max-height: 532px;
+    border-radius: 30px;
+    min-width: 335px;
+    min-height: 446px;
+}
+
+@media screen and (min-width: 768px) {
+    .abt-section {
+    padding: 0px 32px;
+    min-width: 768px;
+    min-height: 1064px;
+    }
+
+    .container {
+    min-width: 704px;
+    min-height: 512px;
+    }
+
+    .abt-t-p-div {
+    min-width: 584px;
+    min-height: 244px;
+    }
+
+    .abt-h {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 92%;
+        letter-spacing: -0.02em;
+        color: var(--main);
+        margin-bottom: 40px;
+    }
+
+    .abt-p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: -0.02em;
+        color: rgba(12, 12, 12, 0.7);
+        margin-bottom: 40px;
+    }
+
+    .abt-btn {
+        border-radius: 16px;
+        min-width: 160px;
+        min-height: 48px;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background-color: #3350E9;
+        color: #ffffff;
+    }
+
+    .abt-img{
+        border-radius: 50px;
+        min-width: 704px;
+        min-height: 512px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .abt-section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 0px 65px;
+            gap: 40px;
+            margin-bottom: 100px;
+        }
+    
+        .container {
+            padding: 80px 60px;
+            min-width: 580px;
+            min-height: 532px;
+            background-color: #F3F3F3;
+            border-radius: 50px;
+            margin-right: 0;
+        }
+    
+        .abt-t-p-div {
+            min-width: 295px;
+            min-height: 278px;
+            display: flex;
+            flex-direction: column;
+            max-width: 460px;
+        }
+    
+        .abt-h {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            color: var(--main);
+            margin-bottom: 40px;
+        }
+    
+        .abt-p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 129%;
+            letter-spacing: -0.02em;
+            color: rgba(12, 12, 12, 0.7);
+            margin-bottom: 20px;
+        }
+    
+        .abt-btn {
+            min-width: 160px;
+            min-height: 48px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            background-color: #3350E9;
+            color: #ffffff;
+            border-radius: 16px;
+        }
+    
+        .abt-img {
+            border-radius: 50px;
+            min-width: 530px;
+            min-height: 532px;
+        }
 }
