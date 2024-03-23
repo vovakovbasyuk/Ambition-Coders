@@ -89,7 +89,7 @@
     }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
     .advertisement {
         max-width: 1158px;
         background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_desktop.jpg);
@@ -107,7 +107,7 @@
     }
 }
 
-@media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+@media only screen and (min-resolution: 192dpi) and (min-width: 1280px) {
     .advertisement {
         background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_desktop@2x.jpg);
     }
