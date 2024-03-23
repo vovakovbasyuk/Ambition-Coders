@@ -2,14 +2,17 @@
 
 .advertisement {
     border-radius: 30px;
-    width: 335px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 335px;
     background-color: #0c0c0c;
     background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advertisement-container {
     padding: 60px 28px;
 }
 
@@ -26,6 +29,12 @@
 
 .advertisement-title-extra-color {
     color: rgba(251, 251, 251, 0.5);
+}
+
+.btn-link {
+    display: block;
+    width: 160px;
+    height: 48px;
 }
 
 .advertisement-btn {
@@ -49,7 +58,7 @@
 }
 
 
-@media only screen and (min-resolution: 192dpi) and (max-width: 374px) {
+@media only screen and (min-resolution: 192dpi) and (max-width: 375px) {
     .advertisement {
         min-width: 320px;
         background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
@@ -57,11 +66,13 @@
     }
 }
 
-
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
     .advertisement {
-        min-width: 768px;
+        max-width: 768px;
         background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_tablet.jpg);
+    }
+
+    .advertisement-container {
         padding: 80px 64px;
     }
 
@@ -80,8 +91,11 @@
 
 @media only screen and (min-width: 1158px) {
     .advertisement {
-        min-width: 1158px;
+        max-width: 1158px;
         background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_desktop.jpg);
+    }
+
+    .advertisement-container {
         padding: 83px 80px;
         display: flex;
         justify-content: space-between;
@@ -92,7 +106,6 @@
         max-width: 690px;
     }
 }
-
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
     .advertisement {
