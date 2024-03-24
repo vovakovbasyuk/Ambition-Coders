@@ -4,6 +4,7 @@
 }
 .page-header-container {
   position: relative;
+  justify-content: space-between;
   min-width: 320px;
   padding: 20px;
 }
@@ -111,7 +112,6 @@
   }
   .header-social-link-icon {
     fill: #0c0c0c;
-    
   }
   .header-social-link:hover,
   .header-social-link:focus {
