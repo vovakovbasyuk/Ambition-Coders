@@ -1,10 +1,10 @@
-/* ===========Header styles============ */
 .menu-item,
 .header-link-menu {
   display: none;
 }
 .page-header-container {
   position: relative;
+  padding: 20px;
 }
 .header-nav-container {
   display: flex;
@@ -17,20 +17,26 @@
   border: none;
   padding: 0;
   line-height: 0;
-  cursor: pointer;
 }
 .menu-open-btn-icon {
   stroke-width: 2.5px;
   stroke: #0c0c0c;
 }
 .logo {
+  font-weight: 500;
+  font-size: 16px;
   letter-spacing: -0.02em;
-  color: #0c0c0c;
 }
 @media screen and (min-width: 768px) {
+  .page-header-container {
+    padding: 26px 36px;
+  }
   .page-navigation {
     display: flex;
     align-items: center;
+  }
+  .logo {
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -38,13 +44,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 65px;
   }
 
   .menu-open-btn {
     display: none;
   }
   .logo {
-    font-size: 20px;
     margin-right: 203px;
   }
   .menu,
@@ -56,13 +62,9 @@
     margin-left: 0;
     font-size: 14px;
     line-height: 1.29;
-    color: #0c0c0c;
+    text-align: center;
   }
   .menu-item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -71,6 +73,7 @@
   }
   .home {
     position: relative;
+    background-color: transparent;
   }
   .home::after {
     content: '';
@@ -82,7 +85,7 @@
     height: 8px;
     left: 50%;
     background-color: #3350e9;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-link-menu {
     display: flex;
@@ -140,22 +143,22 @@
   background-color: #0c0c0c;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
   color: #fbfbfb;
   opacity: 0;
   visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
 }
 .container-mobile-menu-container {
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   padding: 240px 64px 260px;
-}
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
 }
 
 .mobile-menu-close-btn {
@@ -217,7 +220,6 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  min-width: 122px;
   margin-bottom: 40px;
 }
 .mobile-social-link {
@@ -240,6 +242,7 @@
 .mobile-social-link:focus {
   background-color: #f4f4f4;
 }
+
 @media screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .mobile-menu {
     background-image: linear-gradient(
