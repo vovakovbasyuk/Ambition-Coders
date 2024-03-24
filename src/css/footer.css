@@ -44,16 +44,17 @@
     padding: 8px;
     width: 34px;
     height: 34px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.size-footer {
+.social-icon {
+    background-color: black;
     fill: #fbfbfb;
+    transition: fill 0.3s ease-in-out;
 }
 
-.icon-footer-listr:hover,
-.icon-footer-listr:focus {
-    fill: aqua;
+.social-icon:hover,
+.social-icon:focus {
+    fill: rgb(255, 255, 255);
 }
 
 .text-footer {
@@ -169,6 +170,9 @@
     padding-right: 40px;
 }
 
+.box-position {
+    display: flex;
+}
 .page-footer {
         max-width: 704px;
         height: 540px;
@@ -178,10 +182,17 @@
    font-size: 20px;
 }
  
+.mobile-icon-list {
+    margin-bottom: 0;
+}
 .tel-footer-box {
+        max-width: 162px;
+    height: 48px;
     padding-left: 15px;
+    padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-left: 340px;
 }
 
 .tel-footer {
@@ -201,6 +212,9 @@
         margin-top: 86px;
         margin-left: 50px;
     }
+.text-nav-box {
+    margin-top: 100px;
+}
 
 .nav-text  {
     font-size: 14px;
@@ -243,11 +257,17 @@
             height: 400px;
         }
     
-        .text-footer-box {
-            margin-left: 306px;
-            margin-top: none;
+.tel-footer-box {
+    margin-left: 848px;
+}
+
+    .text-footer-box {
+        margin-top: -80px;
+        margin-right: 307px;
+        margin-left: 316px;
+        margin-bottom: 134px;
         }
-    
+       
         .nav-box {
             margin-right: 370px;
         }
@@ -256,9 +276,10 @@
             padding-right: 40px;
         }
     
-    
         .footer-watch {
+           
             margin-right: 665px;
+            
         }
     
 }
