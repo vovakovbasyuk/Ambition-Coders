@@ -8,42 +8,36 @@
       </p>
       <form class="contact-us-form">
         <div class="contact-us-form-field-wrapper">
-          <label class="contact-us-form-label" for="name">
-            <input
-              class="contact-us-form-input"
-              type="text"
-              placeholder="Name"
-              name="name"
-              id="name"
-              pattern="[A-Za-z\s]{2,}"
-              required
-            />
-          </label>
-          <label class="contact-us-form-label" for="mail">
-            <input
-              class="contact-us-form-input"
-              type="email"
-              placeholder="Email"
-              name="mail"
-              id="mail"
-              required
-            />
-          </label>
-          <label class="contact-us-form-label" for="number">
-            <input
-              class="contact-us-form-input"
-              type="number"
-              id="number"
-              name="number"
-              placeholder="+380"
-              pattern="[0-9+-]{5,}"
-              required
-            />
-          </label>
+          <input
+            class="contact-us-form-input"
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            pattern="[A-Za-z\s]{2,}"
+            required
+          />
+          <input
+            class="contact-us-form-input"
+            type="email"
+            placeholder="Email"
+            name="mail"
+            id="mail"
+            required
+          />
+          <input
+            class="contact-us-form-input"
+            type="tel"
+            id="number"
+            name="number"
+            placeholder="+380"
+            pattern="[0-9+-]{5,}"
+            required
+          />
           <textarea
             class="contact-us-form-message"
-            name=""
-            id=""
+            name="message"
+            id="message"
             placeholder="Comment"
           ></textarea>
         </div>

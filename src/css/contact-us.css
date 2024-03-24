@@ -8,7 +8,7 @@
 }
 
 .contact-us {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 .contact-us-container {
@@ -102,7 +102,7 @@
 
 @media only screen and (min-width: 768px) {
   .contact-us {
-    margin-top: 80px;
+    padding-top: 80px;
   }
 
   .contact-us-title {
@@ -145,7 +145,7 @@
 
 @media only screen and (min-width: 1280px) {
   .contact-us {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 
   .contact-us-content {
@@ -164,6 +164,6 @@
 
   .contact-us-container {
     padding: 50px 60px 50px 60px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 }
