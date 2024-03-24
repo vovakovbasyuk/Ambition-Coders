@@ -11,7 +11,7 @@
     />
     
     <script type="module" crossorigin src="/Ambition-Coders/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Ambition-Coders/assets/index-31a5aafc.css">
+    <link rel="stylesheet" href="/Ambition-Coders/assets/index-42954985.css">
   </head>
   <body>
     <header>
@@ -425,7 +425,73 @@
   </section>
       <section></section>
 
-      <section></section>
+      <section class="contact-us container" id="contact-us">
+  <h2 class="contact-us-title">Contact Us</h2>
+  <div class="contact-us-content">
+    <div class="contact-us-container">
+      <p class="contact-us-text">
+        Please use the form below to contact us. Enter your name, email, phone,
+        and message and we'll get back to you shortly.
+      </p>
+      <form class="contact-us-form">
+        <div class="contact-us-form-field-wrapper">
+          <input
+            class="contact-us-form-input"
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            pattern="[A-Za-z\s]{2,}"
+            required
+          />
+          <input
+            class="contact-us-form-input"
+            type="email"
+            placeholder="Email"
+            name="mail"
+            id="mail"
+            required
+          />
+          <input
+            class="contact-us-form-input"
+            type="tel"
+            id="number"
+            name="number"
+            placeholder="+380"
+            pattern="[0-9+-]{5,}"
+            required
+          />
+          <textarea
+            class="contact-us-form-message"
+            name="message"
+            id="message"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+        <button class="contact-us-send-btn" type="submit">Send</button>
+      </form>
+    </div>
+    <picture>
+      <source
+        srcset="/Ambition-Coders/assets/contact-us-clock-desktop-788403c0.jpg 1x, /Ambition-Coders/assets/contact-us-clock-desktop@2x-2eb3d343.jpg 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="/Ambition-Coders/assets/contact-us-clock-tablet-da9e8773.jpg 1x, /Ambition-Coders/assets/contact-us-clock-tablet@2x-f660c521.jpg 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="/Ambition-Coders/assets/contact-us-clock-mobile-ad394a09.jpg 1x, /Ambition-Coders/assets/contact-us-clock-mobile@2x-3327b9e6.jpg 2x"
+        media="(max-width:767px)"
+      />
+      <img
+        class="contact-us-clock-img"
+        src="/Ambition-Coders/assets/contact-us-clock-desktop-788403c0.jpg"
+        alt="clock"
+      />
+    </picture>
+  </div>
+</section>
 
     </main>
     <footer>
