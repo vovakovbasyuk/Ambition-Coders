@@ -235,11 +235,11 @@
   transition: stoke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-icon {
-  stroke: #f4f4fd;
+  stroke: #f4f4f4;
 }
 .mobile-social-link:hover,
 .mobile-social-link:focus {
-  background-color: #f4f4f4;
+  stroke: #f4f4f4;
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px) {
