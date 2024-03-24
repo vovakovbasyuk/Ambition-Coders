@@ -1,1 +1,76 @@
-<section></section>
+<section class="contact-us container" id="contact-us">
+  <h2 class="contact-us-title">Contact Us</h2>
+  <div class="contact-us-content">
+    <div class="contact-us-container">
+      <p class="contact-us-text">
+        Please use the form below to contact us. Enter your name, email, phone,
+        and message and we'll get back to you shortly.
+      </p>
+      <form class="contact-us-form">
+        <div class="contact-us-form-field-wrapper">
+          <input
+            class="contact-us-form-input"
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            pattern="[A-Za-z\s]{2,}"
+            required
+          />
+          <input
+            class="contact-us-form-input"
+            type="email"
+            placeholder="Email"
+            name="mail"
+            id="mail"
+            required
+          />
+          <input
+            class="contact-us-form-input"
+            type="tel"
+            id="number"
+            name="number"
+            placeholder="+380"
+            pattern="[0-9+-]{5,}"
+            required
+          />
+          <textarea
+            class="contact-us-form-message"
+            name="message"
+            id="message"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+        <button class="contact-us-send-btn" type="submit">Send</button>
+      </form>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./img/contact-us/contact-us-clock-desktop.jpg    1x,
+          ./img/contact-us/contact-us-clock-desktop@2x.jpg 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./img/contact-us/contact-us-clock-tablet.jpg    1x,
+          ./img/contact-us/contact-us-clock-tablet@2x.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./img/contact-us/contact-us-clock-mobile.jpg    1x,
+          ./img/contact-us/contact-us-clock-mobile@2x.jpg 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        class="contact-us-clock-img"
+        src="./img/contact-us/contact-us-clock-desktop.jpg"
+        alt="clock"
+      />
+    </picture>
+  </div>
+</section>
