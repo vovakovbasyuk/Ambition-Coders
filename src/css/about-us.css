@@ -1,30 +1,22 @@
 .abt-section {
-    padding: 0px 20px;
     min-width: 375px;
     min-height: 912px;
     margin-bottom: 60px;
 }
 
-.all{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container {
+.abt-t-p-div {
+    background-color: #F3F3F3;
     min-width: 335px;
     min-height: 446px;
-    background-color: #F3F3F3;
-    margin-bottom: 20px;
     border-radius: 30px;
+    margin-bottom: 20px;
     padding: 20px 20px;
-}
-
-.abt-t-p-div {
-    min-width: 295px;
-    min-height: 278px;
-    margin-bottom: 40px;
-    padding-right: 20px;
 }
 
 .abt-h {
@@ -35,6 +27,7 @@
     letter-spacing: -0.02em;
     color: var(--main);
     margin-bottom: 28px;
+    margin-top: 40px;
 }
 
 .abt-p {
@@ -73,17 +66,13 @@
         margin-bottom: 80px;
     }
 
-    .container {
+    .abt-t-p-div {
+        background-color: #F3F3F3;
+        border-radius: 50px;
         min-width: 704px;
         min-height: 512px;
-        background-color: #F3F3F3;
-        padding: 80px 60px;
-        margin-bottom: 40px;
-    }
-
-    .abt-t-p-div {
-        min-width: 584px;
-        min-height: 244px;
+        padding: 60px 60px;
+        margin-bottom: 60px;
     }
 
     .abt-h {
@@ -94,6 +83,7 @@
         letter-spacing: -0.02em;
         color: var(--main);
         margin-bottom: 40px;
+        margin-top: 0;
     }
 
     .abt-p {
@@ -103,7 +93,7 @@
         line-height: 125%;
         letter-spacing: -0.02em;
         color: rgba(12, 12, 12, 0.7);
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .abt-btn {
@@ -115,6 +105,7 @@
         border: none;
         background-color: #3350E9;
         color: #ffffff;
+        margin-top: 60px;
     }
 
     .abt-img {
@@ -125,7 +116,7 @@
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
     .abt-section {
         display: flex;
         align-items: flex-start;
@@ -135,46 +126,40 @@
         margin-bottom: 100px;
     }
 
-    .all {
+    .container {
         display: flex;
         flex-direction: row;
         gap: 40px;
-    }
-
-    .container {
-        padding: 80px 60px;
-        min-width: 580px;
-        min-height: 532px;
-        background-color: #F3F3F3;
-        border-radius: 50px;
-        margin-right: 0;
-        margin-bottom: 0;
+        margin: 0 0;
+        align-items: center;
+        padding: 0 0;
     }
 
     .abt-t-p-div {
-        min-width: 295px;
-        min-height: 278px;
-        display: flex;
-        flex-direction: column;
-        max-width: 460px;
+        background-color: #F3F3F3;
+        margin-bottom: 0;
+        border-radius: 50px;
+        padding: 80px 60px;
+        min-width: 580px;
+        height: 532px;
     }
 
     .abt-h {
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 100%;
-        letter-spacing: -0.02em;
-        color: var(--main);
-        margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 92%;
+    letter-spacing: -0.02em;
+    color: var(--main);
     }
 
     .abt-p {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 129%;
-        letter-spacing: -0.02em;
-        color: rgba(12, 12, 12, 0.7);
-        margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
     }
 
     .abt-btn {
@@ -186,11 +171,11 @@
         background-color: #3350E9;
         color: #ffffff;
         border-radius: 16px;
+       
     }
 
     .abt-img {
         border-radius: 50px;
-        min-width: 530px;
         min-height: 532px;
     }
 }
