@@ -103,21 +103,19 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    width: 20px;
-    height: 20px;
-    margin: 8px;
-    fill: none;
+    border: 1px solid rgba(12, 12, 12, 0.1);
+    width: 36px;
+    height: 36px;
     background-color: transparent;
-    opacity: 0.8;
-    transition: fill, stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-social-link-icon {
-    stroke: #0c0c0c;
-    border: 1px solid rgba(12, 12, 12, 0.1);
+    fill: #0c0c0c;
+    
   }
   .header-social-link:hover,
   .header-social-link:focus {
-    stroke: #3350e9;
+    fill: #3350e9;
   }
 }
 
