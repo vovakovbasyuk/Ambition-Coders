@@ -18,20 +18,17 @@
 }
 
 .abt-h {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: -0.02em;
-  color: var(--main);
   margin-bottom: 40px;
 }
 
 .abt-p {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
-  line-height: 129%;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
 }
@@ -79,20 +76,17 @@
   }
 
   .abt-h {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 48px;
-    line-height: 92%;
+    line-height: 1;
     letter-spacing: -0.02em;
-    color: var(--main);
     margin-bottom: 50px;
   }
 
   .abt-p {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.25;
     letter-spacing: -0.02em;
     color: rgba(12, 12, 12, 0.7);
   }
@@ -140,13 +134,11 @@
   }
 
   .abt-h {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 48px;
-    line-height: 92%;
+    line-height: 1;
     letter-spacing: -0.02em;
-    color: var(--main);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .abt-ul{
@@ -157,10 +149,9 @@
   }
 
   .abt-p {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     color: rgba(12, 12, 12, 0.7);
   }
