@@ -124,7 +124,6 @@ body {
 }
 
 .container {
-  min-width: 320px;
   max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
@@ -143,6 +142,12 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    min-width: 320px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
