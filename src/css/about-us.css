@@ -1,16 +1,20 @@
-.abt-section {
-  min-width: 375px;
-  min-height: 912px;
-  margin-bottom: 60px;
-}
-
 .abt-t-p-div {
   background-color: #f3f3f3;
   min-width: 335px;
   min-height: 446px;
   border-radius: 30px;
-  margin-bottom: 20px;
   padding: 20px 20px;
+  padding-top: 40px;
+}
+
+.abt-all{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gap{
+  margin-top: 60px;
 }
 
 .abt-h {
@@ -20,8 +24,7 @@
   line-height: 100%;
   letter-spacing: -0.02em;
   color: var(--main);
-  margin-bottom: 28px;
-  margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 .abt-p {
@@ -41,32 +44,37 @@
   background-color: #3350e9;
   color: #ffffff;
   text-align: center;
-  cursor: pointer;
   border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .abt-img {
   border-radius: 30px;
-  min-width: 335px;
-  min-height: 446px;
-  color: (12, 12, 12, 0.2);
+  max-width: 335px;
 }
 
 @media screen and (min-width: 768px) {
-  .abt-section {
-    padding: 0px 32px;
-    min-width: 768px;
-    min-height: 1064px;
-    margin-bottom: 80px;
-  }
 
   .abt-t-p-div {
     background-color: #f3f3f3;
     border-radius: 50px;
-    min-width: 704px;
+    width: 704px;
     min-height: 512px;
     padding: 60px 60px;
-    margin-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 0;
+  }
+
+  .abt-all{
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+  }
+
+  .gap{
+    margin-top: 80px;
   }
 
   .abt-h {
@@ -76,8 +84,7 @@
     line-height: 92%;
     letter-spacing: -0.02em;
     color: var(--main);
-    margin-bottom: 40px;
-    margin-top: 0;
+    padding-bottom: 50px;
   }
 
   .abt-p {
@@ -87,7 +94,6 @@
     line-height: 125%;
     letter-spacing: -0.02em;
     color: rgba(12, 12, 12, 0.7);
-    margin-bottom: 20px;
   }
 
   .abt-btn {
@@ -104,28 +110,29 @@
 
   .abt-img {
     border-radius: 50px;
-    min-width: 704px;
-    min-height: 512px;
+    max-width: 704px; 
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .abt-section {
+  .abt-all{
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0px 65px;
+    flex-direction: row;
     gap: 40px;
-    margin-bottom: 100px;
+  }
+
+  .abt-text{
+    width: 460px;
+    height: 284px;
   }
 
   .abt-t-p-div {
     background-color: #f3f3f3;
     margin-bottom: 0;
-    border-radius: 50px;
-    padding: 80px 60px;
-    min-width: 580px;
-    height: 532px;
+   border-radius: 50px;
+   padding: 80px 60px;
+   width: 580px;
+   height: 532px;
   }
 
   .abt-h {
@@ -155,10 +162,11 @@
     background-color: #3350e9;
     color: #ffffff;
     border-radius: 16px;
+    margin-top: 20px;
   }
 
   .abt-img {
     border-radius: 50px;
-    min-height: 532px;
+    max-width: 530px;
   }
 }

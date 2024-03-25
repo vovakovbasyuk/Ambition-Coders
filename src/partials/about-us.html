@@ -1,5 +1,6 @@
-<section class="abt-section" id="about-us">
-    <div class="container">
+<section id="about-us">
+    <div class="container gap">
+        <div class="abt-all">
         <div class="abt-t-p-div">
             <h2 class="abt-h">About Us</h2>
             <p class="abt-p">Welcome to our premium watch
@@ -14,10 +15,14 @@
             </button>
         </a>
     </div>
-        <picture>
-            <source media="(min-width:768px)" srcset="./img/abt-us/about_us_tablet.jpg">
-            <source media="(min-width:1024px)" srcset="./img/abt-us/about_us.jpg">
-            <img class="abt-img" src="./img/abt-us/about_us_phone.jpg" alt="Watch" style="width:auto;">
+        <picture class="abt-img">
+            <source srcset="./img/abt-us/abt_us_pc.jpg 1x, ./img/abt-us/abt_us_pc@2x.jpg 2x" media="(min-width: 1280px)" />
+            <source srcset="./img/abt-us/abt_us_tablet.jpg 1x, ./img/abt-us/abt_us_tablet@2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./img/abt-us/abt_us_mob.jpg 1x, ./img/abt-us/abt_us_mob@2x.jpg 2x" media="(max-width: 767px)" />
+            <img src="./img/abt-us/abt_us_mob.jpg" alt="Super Cool watch" />
         </picture>
+        </div>
     </div>
 </section>
+
+<!--Во положенню все має відповідати оригіналу, дякую за твою настанову-->
