@@ -14,7 +14,7 @@
 }
 
 .gap{
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 .abt-h {
@@ -24,7 +24,7 @@
   line-height: 100%;
   letter-spacing: -0.02em;
   color: var(--main);
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .abt-p {
@@ -34,7 +34,6 @@
   line-height: 129%;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
-  margin-bottom: 20px;
 }
 
 .abt-btn {
@@ -45,8 +44,10 @@
   color: #ffffff;
   text-align: center;
   border: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+.abt-none{
+  margin-bottom: 0;
 }
 
 .abt-img {
@@ -74,7 +75,7 @@
   }
 
   .gap{
-    margin-top: 80px;
+    padding-top: 80px;
   }
 
   .abt-h {
@@ -84,7 +85,7 @@
     line-height: 92%;
     letter-spacing: -0.02em;
     color: var(--main);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   .abt-p {
@@ -105,7 +106,6 @@
     border: none;
     background-color: #3350e9;
     color: #ffffff;
-    margin-top: 60px;
   }
 
   .abt-img {
@@ -126,6 +126,10 @@
     height: 284px;
   }
 
+  .gap{
+   padding-top: 100px;
+  }
+
   .abt-t-p-div {
     background-color: #f3f3f3;
     margin-bottom: 0;
@@ -142,6 +146,14 @@
     line-height: 92%;
     letter-spacing: -0.02em;
     color: var(--main);
+    margin-bottom: 50px;
+  }
+
+  .abt-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
   }
 
   .abt-p {
@@ -162,7 +174,6 @@
     background-color: #3350e9;
     color: #ffffff;
     border-radius: 16px;
-    margin-top: 20px;
   }
 
   .abt-img {
