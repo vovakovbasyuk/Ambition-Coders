@@ -9,7 +9,7 @@
   line-height: 1;
   letter-spacing: -0.02em;
   color: #0c0c0c;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 .catalog-list {
   display: flex;
@@ -82,7 +82,7 @@
   }
   .section-catalog-title {
     font-size: 48px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
   .catalog-list {
     gap: 32px 16px;
