@@ -1,115 +1,144 @@
-
-
 .advertisement {
-    border-radius: 30px;
-    min-width: 335px;
-    background-color: #0c0c0c;
-    background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_mobile.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
+  border-radius: 30px;
+  min-width: 335px;
+  background-color: #0c0c0c;
+  background-image: linear-gradient(
+      rgba(12, 12, 12, 0.8),
+      rgba(12, 12, 12, 0.8)
+    ),
+    url(/../src/img/advertisement/advertisement_img_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advertisement-container {
-    padding: 60px 28px;
+  padding: 60px 28px;
 }
 
 .advertisement-title {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #fbfbfb;
-    min-width: 279px;
-    margin-bottom: 28px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  min-width: 279px;
+  margin-bottom: 28px;
 }
 
 .advertisement-title-extra-color {
-    color: rgba(251, 251, 251, 0.5);
+  color: rgba(251, 251, 251, 0.5);
 }
 
 .btn-link {
-    display: block;
-    width: 160px;
-    height: 48px;
+  display: block;
+  width: 160px;
+  height: 48px;
 }
 
 .advertisement-btn {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    color: #fbfbfb;
-    width: 160px;
-    height: 48px;
-    border: 1px solid rgba(251, 251, 251, 0.15);
-    border-radius: 16px;
-    background: none;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+  width: 160px;
+  height: 48px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  background: none;
 }
 
 .advertisement-btn:hover,
 .advertisement-btn:focus {
-    color: #0c0c0c;
-    background-color: #fbfbfb;
+  color: #0c0c0c;
+  background-color: #fbfbfb;
 }
 
+.margin-container {
+  padding-top: 60px;
+}
 
 @media only screen and (min-resolution: 192dpi) and (max-width: 375px) {
-    .advertisement {
-        min-width: 320px;
-        background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
-            url(/../src/img/advertisement/advertisement_img_mobile@2x.jpg);
-    }
+  .advertisement {
+    min-width: 320px;
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(/../src/img/advertisement/advertisement_img_mobile@2x.jpg);
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .advertisement {
-        max-width: 768px;
-        background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_tablet.jpg);
-    }
+  .advertisement {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(/../src/img/advertisement/advertisement_img_tablet.jpg);
+  }
+  .margin-container {
+    padding-top: 80px;
+  }
 
-    .advertisement-container {
-        padding: 80px 64px;
-    }
+  .advertisement-container {
+    padding: 80px 64px;
+  }
 
-    .advertisement-title {
-        max-width: 576px;
-        font-size: 48px;
-        margin-bottom: 32px;
-    }
+  .advertisement-title {
+    max-width: 576px;
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
 }
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
-    .advertisement {
-        background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_tablet@2x.jpg);
-    }
+  .advertisement {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(/../src/img/advertisement/advertisement_img_tablet@2x.jpg);
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    .advertisement {
-        max-width: 1158px;
-        background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_desktop.jpg);
-    }
+  .advertisement {
+    max-width: 1280px;
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(/../src/img/advertisement/advertisement_img_desktop.jpg);
+  }
+  .margin-container {
+    padding-top: 100px;
+  }
 
-    .advertisement-container {
-        padding: 83px 80px;
-        display: flex;
-        justify-content: space-between;
-        gap: 140px;
-    }
+  .advertisement-container {
+    padding: 83px 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+  }
 
-    .advertisement-title {
-        max-width: 690px;
-    }
+  .advertisement-title {
+    max-width: 690px;
+  }
 }
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 1280px) {
-    .advertisement {
-        background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/../src/img/advertisement/advertisement_img_desktop@2x.jpg);
-    }
+  .advertisement {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(/../src/img/advertisement/advertisement_img_desktop@2x.jpg);
+  }
 }
-
