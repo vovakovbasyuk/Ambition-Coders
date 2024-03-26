@@ -144,11 +144,11 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 375px) {
+/* @media only screen and (max-width: 375px) {
   .container {
     min-width: 320px;
   }
-}
+} */
 
 @media only screen and (min-width: 768px) {
   .container {
