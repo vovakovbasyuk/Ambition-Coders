@@ -45,7 +45,7 @@
   width: 160px;
   height: 48px;
   border-radius: 16px;
-  background-color: #3350e9;
+  background-color: #3350E9;
   color: #ffffff;
   text-align: center;
   border: none;
@@ -53,8 +53,8 @@
 
 .abt-btn:hover,
 .abt-btn:focus {
-  color: #0c0c0c;
-  background-color: #fbfbfb;
+  color: #FBFBFB;
+  background-color: #1F3CD4;
 }
 
 .abt-none{
@@ -64,6 +64,7 @@
 .abt-img {
   border-radius: 30px;
   max-width: 335px;
+  background-color: #0C0C0C;
 }
 
 @media screen and (min-width: 768px) {
@@ -116,7 +117,7 @@
     text-align: center;
     cursor: pointer;
     border: none;
-    background-color: #3350e9;
+    background-color: #3350E9;
     color: #ffffff;
   }
 
@@ -180,7 +181,7 @@
     text-align: center;
     cursor: pointer;
     border: none;
-    background-color: #3350e9;
+    background-color: #3350E9;
     color: #ffffff;
     border-radius: 16px;
   }
