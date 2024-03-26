@@ -100,7 +100,7 @@
 
 .footer-nav-item {
   display: inline;
-  margin-right: 16px;
+  margin-right: 14px;
   font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -199,21 +199,15 @@
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-left: 340px;
   }
 
   .footer-tel-link {
     font-size: 14px;
     line-height: 1.28;
   }
-
-  .footer-text-box {
-    max-width: 529px;
-    height: 96px;
-    margin-top: 86px;
-    margin-left: 50px;
-  }
-
+    .footer-text-box {
+      margin-top: 0;
+    }
   .footer-text {
     font-size: 28px;
     line-height: 1.15;
@@ -223,26 +217,30 @@
     margin-top: 110px;
   }
 
+.footer-nav-list {
+  display: flex;
+}
+
   .footer-nav-item {
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
     color: #fbfbfb;
-    display: table-cell;
+    margin-right: 19px;
   }
 
   .footer-nav-text {
     font-size: 14px;
     line-height: 1.29;
     max-width: 162px;
-    margin-left: 76px;
+    margin-left: 49px;
   }
 
   .footer-watch {
     font-size: 14px;
     line-height: 1.28;
     display: inline;
-    margin-right: 153px;
+    margin-right: 152px;
   }
 
   .footer-privacy {
