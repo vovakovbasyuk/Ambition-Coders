@@ -109,11 +109,12 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #0c0c0c;
+  transition: color 250ms linear;
 }
 
 .scroll-link:hover,
 .scroll-link:focus {
-  color: #3350E9;
+  color: #3350e9;
 }
 
 @media screen and (min-width: 768px) {

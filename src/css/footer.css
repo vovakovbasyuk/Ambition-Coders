@@ -48,14 +48,13 @@
   padding: 8px;
   width: 34px;
   height: 34px;
-  fill: #fbfbfb;
-  background-color: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #a2a2a2;
 }
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
-  fill: #ffffff;
+  fill: #fbfbfb;
 }
 
 .footer-tel-box {
@@ -187,7 +186,7 @@
   }
 
   .footer-icon-list {
-    margin-bottom: 1;
+    margin-bottom: 0;
   }
 
   .footer-tel-box {
@@ -259,30 +258,19 @@
   .footer-page {
     margin-top: 100px;
     max-width: 1216px;
-    height: 400px;
+    height: auto;
+    position: relative;
   }
 
   .footer-position-box {
     display: flex;
   }
 
-  .footer-icon-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(251, 251, 251, 0.1);
-    border-radius: 10px;
-    padding: 8px;
-    width: 34px;
-    height: 34px;
-    fill: #0c0c0c;
-    background-color: transparent;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .footer-icon-link:hover,
-  .footer-icon-link:focus {
-    fill: #3350e9;
+  .footer-text-box {
+    position: absolute;
+    top: 40px;
+    right: 347px;
+    margin-top: 0;
   }
 
   .footer-text {
@@ -299,7 +287,7 @@
   }
 
   .footer-nav-item {
-    padding-right: 40px;
+    margin-right: 40px;
   }
 
   .footer-agreement {
@@ -307,7 +295,7 @@
   }
 
   .footer-watch {
-    margin-right: 665px;
+    margin-right: 660px;
   }
 }
 
