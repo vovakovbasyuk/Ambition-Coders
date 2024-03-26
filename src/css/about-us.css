@@ -5,6 +5,14 @@
   border-radius: 30px;
   padding: 20px 20px;
   padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.abt-ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 .abt-all{
@@ -69,6 +77,10 @@
     padding-top: 80px;
     padding-bottom: 80px;
     margin-bottom: 0;
+  }
+
+  .abt-ul{
+    margin-bottom: 60px;
   }
 
   .abt-all{
