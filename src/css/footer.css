@@ -1,4 +1,12 @@
 /* =====Footer styles===== */
+.footer-container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer-page {
   border-radius: 30px;
   padding-bottom: 28px;
@@ -92,7 +100,7 @@
 
 .footer-nav-item {
   display: inline;
-  padding-right: 14px;
+  margin-right: 16px;
   font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -153,6 +161,13 @@
 
 
 @media screen and (min-width: 768px) {
+.footer-container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+
   .footer-page {
     margin-top: 80px;
     margin-left: auto;
@@ -237,17 +252,19 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container { 
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  .footer-container {
+      max-width: 1280px;
+    }
   
   .footer-page {
     margin-top: 100px;
-    max-width: 1230px;
+    max-width: 1216px;
     height: 400px;
-    
     }
+
+.footer-position-box {
+  display: flex;
+}
 
 .footer-icon-link {
   display: flex;
@@ -268,15 +285,6 @@
   fill: #3350e9;
 }
 
-  .footer-tel-box {
-    margin-left: 866px;
-  }
-
-  .footer-text-box {
-    margin-top: -80px;
-    margin-left: 307px;
-  }
-
   .footer-text {
     font-size: 28px;
     line-height: 1.15;
@@ -287,15 +295,19 @@
   }
 
   .footer-nav-text {
-    margin-left: 449px;
+    margin-left: 435px;
   }
 
   .footer-nav-item {
     padding-right: 40px;
   }
 
+  .footer-agreement {
+    display: inline;
+  }
+
   .footer-watch {
-    margin-right: 679px;
+    margin-right: 665px;
   }
 }
 
