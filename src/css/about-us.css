@@ -43,6 +43,12 @@
   border: none;
 }
 
+.abt-btn:hover,
+.abt-btn:focus {
+  color: #0c0c0c;
+  background-color: #fbfbfb;
+}
+
 .abt-none{
   margin-bottom: 0;
 }
