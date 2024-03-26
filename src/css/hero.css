@@ -111,6 +111,11 @@
   color: #0c0c0c;
 }
 
+.scroll-link:hover,
+.scroll-link:focus {
+  color: #3350E9;
+}
+
 @media screen and (min-width: 768px) {
   .scroll-link {
     font-size: 20px;
