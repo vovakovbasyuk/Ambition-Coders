@@ -19,6 +19,9 @@
   margin-bottom: 60px;
 
 }
+.sale-section {
+    margin-top: 60px;
+}
 .sale-section-info-prace {
 padding: 28px;
 }
@@ -41,7 +44,7 @@ font-size: 14px;
 line-height: 1.28571;
 letter-spacing: -0.02em;
 color: rgba(251, 251, 251, 0.5);
-padding-bottom: 20px;
+margin-bottom: 20px;
 width: 123px;
 }
 
@@ -78,7 +81,7 @@ font-size: 14px;
 line-height: 1.28571;
 letter-spacing: -0.02em;
 color: rgba(251, 251, 251, 0.7);
-padding-bottom: 28px;
+margin-bottom: 28px;
 width: 279px;
 }
 
@@ -107,7 +110,7 @@ padding: 8px 12px;
 .sale-section-price {
     display: flex;
     gap: 9px;
-    padding-bottom: 28px;
+    margin-bottom: 28px;
 }
 
 .sale-title-section {
@@ -149,7 +152,9 @@ background: #f3f3f3;
  } 
 /* ==================================des======================== */
 @media screen and (min-width: 768px) {
-    
+    .sale-section {
+    margin-top: 80px;    
+    }   
     .sale-section-list{
         display: flex;
         flex-direction: column;
@@ -191,7 +196,7 @@ background: #f3f3f3;
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: rgba(251, 251, 251, 0.5);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     width: 123px;
     }
     
@@ -228,7 +233,7 @@ background: #f3f3f3;
     line-height: 1.25;
     letter-spacing: -0.02em;
     color: rgba(251, 251, 251, 0.7);
-    padding-bottom: 28px;
+    margin-bottom: 28px;
     width: 584px;
     }
     
@@ -259,7 +264,7 @@ background: #f3f3f3;
     .sale-section-price {
         display: flex;
         gap: 9px;
-        padding-bottom: 28px;
+        margin-bottom: 28px;
     }
     
     .sale-title-section {
@@ -302,7 +307,9 @@ background: #f3f3f3;
 
 }
 @media screen and (min-width: 1280px) {
-
+    .sale-section {
+        margin-top: 100px;
+    }
     .sale-section-picture-img {
         width: 428px;
       
@@ -331,10 +338,10 @@ background: #f3f3f3;
     }
     .sale-section-text-two {
         width: 410px;
-        padding-bottom: 38px;
+        margin-bottom: 38px;
     }
     .sale-section-price {
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
    
