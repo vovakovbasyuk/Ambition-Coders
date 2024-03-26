@@ -40,14 +40,14 @@
   padding: 8px;
   width: 34px;
   height: 34px;
-  fill: #0c0c0c;
+  fill: #fbfbfb;
   background-color: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-social:hover,
-.footer-icon-social:focus {
-fill: #3350e9;
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  fill: #ffffff;
 }
 
 .footer-tel-box {
@@ -220,12 +220,7 @@ fill: #3350e9;
     font-size: 14px;
     line-height: 1.29;
     max-width: 162px;
-    margin-left: 62px;
-  }
-
-
-  .footer-agreement {
-    display: inline;
+    margin-left: 76px;
   }
 
   .footer-watch {
@@ -241,22 +236,39 @@ fill: #3350e9;
   }
 }
 
-
 @media screen and (min-width: 1280px) {
   .footer-page {
     margin-top: 100px;
-    max-width: 1150px;
+    max-width: 1216px;
     height: 400px;
   }
 
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+  fill: #0c0c0c;
+  background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  fill: #3350e9;
+}
+
   .footer-tel-box {
-    margin-left: 786px;
+    margin-left: 852px;
   }
 
   .footer-text-box {
     margin-top: -80px;
-    margin-right: 241px;
-    margin-left: 270px;
+    margin-left: 307px;
   }
 
   .footer-text {
@@ -268,8 +280,8 @@ fill: #3350e9;
     margin-top: 134px;
   }
 
-  .footer-nav-box {
-    margin-right: 304px;
+  .footer-nav-text {
+    margin-left: 432px;
   }
 
   .footer-nav-item {
@@ -277,7 +289,7 @@ fill: #3350e9;
   }
 
   .footer-watch {
-    margin-right: 599px;
+    margin-right: 665px;
   }
 }
 
