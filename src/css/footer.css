@@ -112,7 +112,7 @@
   line-height: 1.33;
   color: #fbfbfb;
   max-width: 83px;
-  margin-left: 49px;
+  margin-left: 48px;
 }
 
 .underline {
@@ -237,11 +237,17 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .container { 
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
   .footer-page {
     margin-top: 100px;
-    max-width: 1216px;
+    max-width: 1230px;
     height: 400px;
-  }
+    
+    }
 
 .footer-icon-link {
   display: flex;
@@ -263,7 +269,7 @@
 }
 
   .footer-tel-box {
-    margin-left: 852px;
+    margin-left: 866px;
   }
 
   .footer-text-box {
@@ -281,7 +287,7 @@
   }
 
   .footer-nav-text {
-    margin-left: 432px;
+    margin-left: 449px;
   }
 
   .footer-nav-item {
@@ -289,7 +295,7 @@
   }
 
   .footer-watch {
-    margin-right: 665px;
+    margin-right: 679px;
   }
 }
 
