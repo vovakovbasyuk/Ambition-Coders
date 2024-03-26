@@ -40,18 +40,14 @@
   padding: 8px;
   width: 34px;
   height: 34px;
+  fill: #0c0c0c;
   background-color: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-social {
-  fill: #fbfbfb;
-}
-
 .footer-icon-social:hover,
 .footer-icon-social:focus {
-  
-  fill: #fff;
+fill: #3350e9;
 }
 
 .footer-tel-box {
