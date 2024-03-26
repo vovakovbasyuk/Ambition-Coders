@@ -209,7 +209,7 @@
   }
 
   .footer-nav {
-    margin-top: 100px;
+    margin-top: 110px;
   }
 
   .footer-nav-item {
@@ -249,29 +249,50 @@
 @media screen and (min-width: 1280px) {
   .footer-page {
     margin-top: 100px;
-    max-width: 1216px;
+    max-width: 1150px;
     height: 400px;
   }
 
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+  fill: #0c0c0c;
+  background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-social:hover,
+.footer-icon-social:focus {
+  fill: #3350e9;
+}
+
   .footer-tel-box {
-    margin-left: 848px;
+    margin-left: 786px;
   }
 
   .footer-text-box {
     margin-top: -80px;
     margin-right: 307px;
     margin-left: 316px;
-    margin-bottom: 134px;
   }
 
   .footer-text {
     font-size: 28px;
     line-height: 1.15;
+  }
 
+  .footer-nav {
+    margin-top: 134px;
   }
 
   .footer-nav-box {
-    margin-right: 370px;
+    margin-right: 304px;
   }
 
   .footer-nav-item {
@@ -279,7 +300,7 @@
   }
 
   .footer-watch {
-    margin-right: 665px;
+    margin-right: 599px;
   }
 }
 
