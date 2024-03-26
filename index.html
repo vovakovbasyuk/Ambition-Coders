@@ -33,7 +33,7 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
     <script type="module" crossorigin src="/Ambition-Coders/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Ambition-Coders/assets/index-ac49351f.css">
+    <link rel="stylesheet" href="/Ambition-Coders/assets/index-31ce3eb5.css">
   </head>
   <body>
     <header>
@@ -127,17 +127,20 @@
   </div>
 </div>
 <!-- Mobile menu -->
-<div class="mobile-menu">
-  <button class="mobile-menu-close-btn" type="button">
-    <svg
-      class="mobile-menu-close-btn-icon"
-      width="20"
-      height="20"
-      aria-label="close icon"
-    >
-      <use href="/Ambition-Coders/assets/icons-db81e1c6.svg#icon-close"></use>
-    </svg>
-  </button>
+<div class="mobile-menu is-open">
+  <div class="mobile-close-btn-container">
+    <button class="mobile-menu-close-btn" type="button">
+      <svg
+        class="mobile-menu-close-btn-icon"
+        width="20"
+        height="20"
+        aria-label="close icon"
+      >
+        <use href="/Ambition-Coders/assets/icons-db81e1c6.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+
   <ul class="mobile-nav-menu">
     <li class="mobile-menu-item">
       <a class="mobile-menu-link mobilehome" href="./index.html">Home</a>
@@ -488,18 +491,21 @@
   </div>
 </section>
 
-      <section class="advertisement">
-    <div class="container advertisement-container">
-        <h2 class="visually-hidden">Advertisement</h2>
-        <p class="advertisement-title">Choose
-            <span class="advertisement-title-extra-color">your story</span>, making
-            every moment unique. Time is your style, and we reveal it.
-        </p>
-        <a class="btn-link" href="#contact-us">
-            <button type="button" class="advertisement-btn">Contact Us</button>
-        </a>
+      <section class="container">
+  <div class="advertisement">
+    <div class="advertisement-container">
+      <h2 class="visually-hidden">Advertisement</h2>
+      <p class="advertisement-title">
+        Choose <span class="advertisement-title-extra-color">your story</span>,
+        making every moment unique. Time is your style, and we reveal it.
+      </p>
+      <a class="btn-link" href="#contact-us">
+        <button type="button" class="advertisement-btn">Contact Us</button>
+      </a>
     </div>
+  </div>
 </section>
+
       <section class="sale-section" id="sale">
    <div class="container container-sale">
      <h2 class="sale-title-section">Sale</h2>
