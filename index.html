@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WatchCharm</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-    
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/Ambition-Coders/assets/apple-touch-icon-12dc6a63.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABjFBMVEUAAAAAgIAzVd0zTeY0TuUvU+c0TuUAAP8zZv8xUuYyUOYwUOoAgP8vTOM2TOQyUeY2U+YxUecyT+kzUeszUOgzUOgzU+YzTeYyTuM0T+Q0Uek0Uek0UOoxTuYuT+Y0UOgzUOkvUeY1Ueo0Ueo2T+kwTukzUek0UOkxTus0Ueo0T+c0UukzVeY1UucwUOQzVe4wUecyUOY3W+0xUeoyUOk1U+czUOkzUOkzUuYxUeQxTOQzT+MzUOkzUOk2Ues0UeoxT+cxUOYyTuY3Se00UeszUekyUeYyUOkwTuU0UOoyT+YyUek0T+c0UekyUek0UeoxTuIzUOmTovLt7/qImfBfde3Iz/ba3vjs7vlEXutcc+37+/vEzPacqvP5+vtGYOtTa+zO1Pc0Uenk5/j19vo6VurX3Ph/ke+KmvGOnvGmsvSBk/C7xPX4+Pu6w/XCyvZOZ+tmfO7p7Plyhu/J0Pbx8vrz9Po1Uunq7fn09fo8WOqMnPGXpfKvuvW/yPVXb+x2ie9Ubex0h+/////r4rMCAAAAUXRSTlMAAg8eJysxAQUfMzACGzkpNF6a1fHVKAouXtPZbDQ9u7g8SNdHO9XYGrdrZx41MA9fXA6bmSvx7zIvOTfw7ibSl11cDtZoZbY72Ee2XtKY0xp43Uz/AAAAAWJLR0SD/LTP0gAAAAlwSFlzAAAKvAAACrwBZvr+hgAAAAd0SU1FB+gDGg4eExSmrW8AAAHMSURBVDjLdVPnX9NQFH1tSkpPh6VAwDJrQUBKpThorQMF97ygMi7DCbiruBfqX+57zUuapuF8ye+O3PPuOEK4CIWNSJtptkWMcFS0oj1mwkU81u4LJ5I6nErZXzOZaPr9kPSlOzKdXURd3ZmOtDQtT5GeXuk4nCUXff0DQG+P+7+MDw5RE4ZzMkPXSMj6R/rIh/yIZLHfkQRGj1ILxgaB8TqBiYEhCsCE7EWRxIBjFIhJoCDnF8fUWHBCPo1iVBwHpukAlIAZUQBOHJRwEjBEBOi0zcWl+/Rg6SHR8sqq7cnKTsUp4LRtrvE6bfDm1iN+rCvMllERJlLafPL02fNt5p1dfuFwnEHZk0Av+RW/fvP2HdccT1UmSIqz2nzPH3jv46fP2078nKI4D3Rr+8tX/vb9B/NPJ+GCeqQBZBzHL/5NNeZ9x55TbYaBi46j9ucv0d4/dw6XgHkRjSOdD57TQn3UalmXgxOuKIb6ujEcFL+q160O5lrAwVzP6YMRCQsYaXnGwg3ZY6hxtLmJ5vjN0cbR6rO/ddtTvh/es5c1LCWc0p3srFzh3bmSXzge6VWrWnr3Qn7xFooN8RYNv3gVojOGVSmXK5Yx75H/f3sUwBGFG5hDAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTAzLTI2VDE0OjMwOjE5KzAwOjAw6aAi1AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wMy0yNlQxNDozMDoxOSswMDowMJj9mmgAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAulBMVEUAAAA5VeM1T+UvTec0TuUvTeEAAP8zVeYyUOYxUuYzTugxUOczTeY0TuU1UucyUOgzUOkzUOkvUeQ0Uek0UeozUOszUuYtTuY1T+gxT+cyT+cwUOQxUeMzUOkuT+Y3Uu0yUec2U+Y1T+0zUOgzUOl6jfBJY+tsge5YcOxcc+1le+6cqvOJmfDb4PivuvW1v/RwhO/Z3vjJ0Pbi5fk6Vuo0Uenj5viImfC0vvS4wvVPaOs9WepGYOv///9G+Hq6AAAAJHRSTlMACR0rMSsBHjM+b4weJzWP9Y0mt7eMMj5uKoowP/Q9HIs0HW0ySNfkAAAAAWJLR0Q90G1RWQAAAAlwSFlzAAAFXgAABV4BrCritQAAAAd0SU1FB+gDGg4eEmOhnfkAAAC0SURBVBjTRU/pGoIwDOvGRGA4BnKIioDiLd63vP9zWQ4lf5L2+9I0AAhCFcY6lEANtavpBueGrplqNfeEJTOEtIVTbrqinzVwhYl+zcr+8HwCVJftQgYUFAPFfLFcrTcoBiEwD3m7y/eHIwrOgHHk9emcX64ohqPacrs/nq+sttBxefT9KQqkaBID8e02JcFYMIX7m/vptHzdEV71SpSkTl3G1IIB57PAp2rTl9CQsTCu6n8BskAXId+qDQUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDMtMjZUMTQ6MzA6MTgrMDA6MDBP1ylgAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTAzLTI2VDE0OjMwOjE4KzAwOjAwPoqR3AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="
-    />
-    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS01MTJ4NTEyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3350e9" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
-    <script type="module" crossorigin src="/Ambition-Coders/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Ambition-Coders/assets/index-fdb3db2f.css">
-  </head>
-  <body>
-    <header>
-      <div class="container page-header-container" id="up">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WatchCharm</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/Ambition-Coders/assets/apple-touch-icon-12dc6a63.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABjFBMVEUAAAAAgIAzVd0zTeY0TuUvU+c0TuUAAP8zZv8xUuYyUOYwUOoAgP8vTOM2TOQyUeY2U+YxUecyT+kzUeszUOgzUOgzU+YzTeYyTuM0T+Q0Uek0Uek0UOoxTuYuT+Y0UOgzUOkvUeY1Ueo0Ueo2T+kwTukzUek0UOkxTus0Ueo0T+c0UukzVeY1UucwUOQzVe4wUecyUOY3W+0xUeoyUOk1U+czUOkzUOkzUuYxUeQxTOQzT+MzUOkzUOk2Ues0UeoxT+cxUOYyTuY3Se00UeszUekyUeYyUOkwTuU0UOoyT+YyUek0T+c0UekyUek0UeoxTuIzUOmTovLt7/qImfBfde3Iz/ba3vjs7vlEXutcc+37+/vEzPacqvP5+vtGYOtTa+zO1Pc0Uenk5/j19vo6VurX3Ph/ke+KmvGOnvGmsvSBk/C7xPX4+Pu6w/XCyvZOZ+tmfO7p7Plyhu/J0Pbx8vrz9Po1Uunq7fn09fo8WOqMnPGXpfKvuvW/yPVXb+x2ie9Ubex0h+/////r4rMCAAAAUXRSTlMAAg8eJysxAQUfMzACGzkpNF6a1fHVKAouXtPZbDQ9u7g8SNdHO9XYGrdrZx41MA9fXA6bmSvx7zIvOTfw7ibSl11cDtZoZbY72Ee2XtKY0xp43Uz/AAAAAWJLR0SD/LTP0gAAAAlwSFlzAAAKvAAACrwBZvr+hgAAAAd0SU1FB+gDGg4eExSmrW8AAAHMSURBVDjLdVPnX9NQFH1tSkpPh6VAwDJrQUBKpThorQMF97ygMi7DCbiruBfqX+57zUuapuF8ye+O3PPuOEK4CIWNSJtptkWMcFS0oj1mwkU81u4LJ5I6nErZXzOZaPr9kPSlOzKdXURd3ZmOtDQtT5GeXuk4nCUXff0DQG+P+7+MDw5RE4ZzMkPXSMj6R/rIh/yIZLHfkQRGj1ILxgaB8TqBiYEhCsCE7EWRxIBjFIhJoCDnF8fUWHBCPo1iVBwHpukAlIAZUQBOHJRwEjBEBOi0zcWl+/Rg6SHR8sqq7cnKTsUp4LRtrvE6bfDm1iN+rCvMllERJlLafPL02fNt5p1dfuFwnEHZk0Av+RW/fvP2HdccT1UmSIqz2nzPH3jv46fP2078nKI4D3Rr+8tX/vb9B/NPJ+GCeqQBZBzHL/5NNeZ9x55TbYaBi46j9ucv0d4/dw6XgHkRjSOdD57TQn3UalmXgxOuKIb6ujEcFL+q160O5lrAwVzP6YMRCQsYaXnGwg3ZY6hxtLmJ5vjN0cbR6rO/ddtTvh/es5c1LCWc0p3srFzh3bmSXzge6VWrWnr3Qn7xFooN8RYNv3gVojOGVSmXK5Yx75H/f3sUwBGFG5hDAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTAzLTI2VDE0OjMwOjE5KzAwOjAw6aAi1AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wMy0yNlQxNDozMDoxOSswMDowMJj9mmgAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC" />
+  <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAulBMVEUAAAA5VeM1T+UvTec0TuUvTeEAAP8zVeYyUOYxUuYzTugxUOczTeY0TuU1UucyUOgzUOkzUOkvUeQ0Uek0UeozUOszUuYtTuY1T+gxT+cyT+cwUOQxUeMzUOkuT+Y3Uu0yUec2U+Y1T+0zUOgzUOl6jfBJY+tsge5YcOxcc+1le+6cqvOJmfDb4PivuvW1v/RwhO/Z3vjJ0Pbi5fk6Vuo0Uenj5viImfC0vvS4wvVPaOs9WepGYOv///9G+Hq6AAAAJHRSTlMACR0rMSsBHjM+b4weJzWP9Y0mt7eMMj5uKoowP/Q9HIs0HW0ySNfkAAAAAWJLR0Q90G1RWQAAAAlwSFlzAAAFXgAABV4BrCritQAAAAd0SU1FB+gDGg4eEmOhnfkAAAC0SURBVBjTRU/pGoIwDOvGRGA4BnKIioDiLd63vP9zWQ4lf5L2+9I0AAhCFcY6lEANtavpBueGrplqNfeEJTOEtIVTbrqinzVwhYl+zcr+8HwCVJftQgYUFAPFfLFcrTcoBiEwD3m7y/eHIwrOgHHk9emcX64ohqPacrs/nq+sttBxefT9KQqkaBID8e02JcFYMIX7m/vptHzdEV71SpSkTl3G1IIB57PAp2rTl9CQsTCu6n8BskAXId+qDQUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDMtMjZUMTQ6MzA6MTgrMDA6MDBP1ylgAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTAzLTI2VDE0OjMwOjE4KzAwOjAwPoqR3AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII=" />
+  <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS01MTJ4NTEyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3350e9" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+  <script type="module" crossorigin src="/Ambition-Coders/commonHelpers.js"></script>
+  <link rel="stylesheet" href="/Ambition-Coders/assets/index-c47923b8.css">
+</head>
+
+<body>
+  <header class="border-header">
+    <div class="container page-header-container" id="up">
   <div class="header-nav-container">
     <nav class="page-navigation">
       <a class="logo" href="./index.html">watchcharm</a>
@@ -149,9 +135,9 @@
     </li>
   </ul>
 </div>
-    </header>
-    <main>
-      <section>
+  </header>
+  <main>
+    <section>
   <div class="container">
     <div class="hero-container">
       <div class="hero-text">
@@ -204,7 +190,7 @@
     </picture>
   </div>
 </section>
-      <section id="about-us">
+    <section id="about-us">
     <div class="container gap">
         <div class="abt-all">
             <div class="abt-t-p-div">
@@ -243,7 +229,7 @@
 </section>
 
 <!--Во положенню все має відповідати оригіналу, дякую за твою настанову-->
-      <section class="section-catalog" id="catalog">
+    <section class="section-catalog" id="catalog">
   <div class="container">
     <h2 class="section-catalog-title">Catalog</h2>
     <ul class="catalog-list">
@@ -396,7 +382,7 @@
   </div>
 </section>
 
-      <section class="container margin-container">
+    <section class="container margin-container">
   <div class="advertisement">
     <div class="advertisement-container">
       <h2 class="visually-hidden">Advertisement</h2>
@@ -410,7 +396,7 @@
     </div>
   </div>
 </section>
-      <section class="sale-section" id="sale">
+    <section class="sale-section" id="sale">
    <div class="container container-sale">
      <h2 class="sale-title-section">Sale</h2>
      <div class="sale-section-div">
@@ -522,7 +508,7 @@
      </div>
    </div>
  </section>
-      <section id="reviews">
+    <section id="reviews">
   <div class="container">
     <h2 class="reviews-title">Reviews</h2>
     <ul class="reviews-list">
@@ -581,7 +567,7 @@
   </div>
 </section>
 
-      <section class="contact-us container" id="contact-us">
+    <section class="contact-us container" id="contact-us">
   <h2 class="contact-us-title">Contact Us</h2>
   <div class="contact-us-content">
     <div class="contact-us-container">
@@ -591,67 +577,27 @@
       </p>
       <form class="contact-us-form">
         <div class="contact-us-form-field-wrapper">
-          <input
-            class="contact-us-form-input"
-            type="text"
-            placeholder="Name"
-            name="name"
-            id="name"
-            pattern="[A-Za-z\s]{2,}"
-            required
-          />
-          <input
-            class="contact-us-form-input"
-            type="email"
-            placeholder="Email"
-            name="mail"
-            id="mail"
-            required
-          />
-          <input
-            class="contact-us-form-input"
-            type="tel"
-            id="number"
-            name="number"
-            placeholder="+380"
-            pattern="[0-9+-]{5,}"
-            required
-          />
-          <textarea
-            class="contact-us-form-message"
-            name="message"
-            id="message"
-            placeholder="Comment"
-          ></textarea>
+          <input class="contact-us-form-input" type="text" placeholder="Name" name="name" id="name"
+            pattern="[A-Za-z\s]{2,}" required />
+          <input class="contact-us-form-input" type="email" placeholder="Email" name="mail" id="mail" required />
+          <input class="contact-us-form-input" type="tel" id="number" name="number" placeholder="+380"
+            pattern="[0-9+-]{5,}" required />
+          <textarea class="contact-us-form-message" name="message" id="message" placeholder="Comment"></textarea>
         </div>
         <button class="contact-us-send-btn" type="submit">Send</button>
       </form>
     </div>
     <picture>
-      <source
-        srcset="/Ambition-Coders/assets/contact-us-clock-desktop-788403c0.jpg 1x, /Ambition-Coders/assets/contact-us-clock-desktop@2x-2eb3d343.jpg 2x"
-        media="(min-width:1280px)"
-      />
-      <source
-        srcset="/Ambition-Coders/assets/contact-us-clock-tablet-da9e8773.jpg 1x, /Ambition-Coders/assets/contact-us-clock-tablet@2x-f660c521.jpg 2x"
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="/Ambition-Coders/assets/contact-us-clock-mobile-ad394a09.jpg 1x, /Ambition-Coders/assets/contact-us-clock-mobile@2x-3327b9e6.jpg 2x"
-        media="(max-width:767px)"
-      />
-      <img
-        class="contact-us-clock-img"
-        src="/Ambition-Coders/assets/contact-us-clock-desktop-788403c0.jpg"
-        alt="clock"
-      />
+      <source srcset="/Ambition-Coders/assets/contact-us-clock-desktop-788403c0.jpg 1x, /Ambition-Coders/assets/contact-us-clock-desktop@2x-2eb3d343.jpg 2x" media="(min-width:1280px)" />
+      <source srcset="/Ambition-Coders/assets/contact-us-clock-tablet-da9e8773.jpg 1x, /Ambition-Coders/assets/contact-us-clock-tablet@2x-f660c521.jpg 2x" media="(min-width:768px)" />
+      <source srcset="/Ambition-Coders/assets/contact-us-clock-mobile-ad394a09.jpg 1x, /Ambition-Coders/assets/contact-us-clock-mobile@2x-3327b9e6.jpg 2x" media="(max-width:767px)" />
+      <img class="contact-us-clock-img" src="/Ambition-Coders/assets/contact-us-clock-desktop-788403c0.jpg" alt="clock" />
     </picture>
   </div>
 </section>
-
-    </main>
-    <footer>
-      <div id="footer" class="footer-container">
+  </main>
+  <footer>
+    <div id="footer" class="footer-container">
   <div class="footer-page">
     <div class="footer-position-box">
       <div>
@@ -725,8 +671,9 @@
     </div>
   </div>
 </div>
-    </footer>
+  </footer>
 
-    
-  </body>
+  
+</body>
+
 </html>
