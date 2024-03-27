@@ -163,6 +163,7 @@
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+    margin-bottom: 166px;
   }
 
   .footer-page {
@@ -254,6 +255,7 @@
 @media screen and (min-width: 1280px) {
   .footer-container {
     max-width: 1280px;
+    margin-bottom: 32px;
   }
 
   .footer-page {
